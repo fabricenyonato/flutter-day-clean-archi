@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_arch/di.dart';
-import 'package:flutter_clean_arch/features/product/domain/usecases/find_all_poduct_usecase.dart';
-import 'package:flutter_clean_arch/features/product/presentation/product_list.dart';
-import 'package:flutter_clean_arch/features/product/presentation/product_list_notifier.dart';
 import 'package:provider/provider.dart';
+
+import 'di.dart';
+import 'features/products/domain/usecases/find_all_poduct_usecase.dart';
+import 'features/products/presentation/pages/product_list.dart';
+import 'features/products/presentation/notifiers/product_list_notifier.dart';
 
 void main() {
   initDi();

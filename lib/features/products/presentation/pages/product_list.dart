@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_arch/features/product/presentation/product_list_notifier.dart';
-import 'package:flutter_clean_arch/features/product/presentation/product_tile.dart';
 import 'package:provider/provider.dart';
 
+import '../notifiers/product_list_notifier.dart';
+import '../widgets/product_tile.dart';
+
 class ProductList extends StatefulWidget {
-  const ProductList({
-    Key? key,
-  }) : super(key: key);
+  const ProductList({Key? key}) : super(key: key);
 
   @override
   State<ProductList> createState() => _ProductListState();
