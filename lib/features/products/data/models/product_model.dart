@@ -1,5 +1,7 @@
-import 'package:flutter_clean_arch/const.dart';
-import 'package:flutter_clean_arch/features/product/domain/entities/product.dart';
+import 'package:flutter/foundation.dart';
+
+import '../../../../constants.dart';
+import '../../../products/domain/entities/product.dart';
 
 class ProductModel extends Product {
   ProductModel({
@@ -17,6 +19,7 @@ class ProductModel extends Product {
         );
 
   factory ProductModel.fromJson(Map<String, dynamic> map) {
+    debugPrint('Map: $map');
     return ProductModel(
       id: map['id'],
       name: map['attributes']['name'],
